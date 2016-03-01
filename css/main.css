@@ -1,7 +1,6 @@
-
 @font-face {
    font-family: x;
-   src: url(../fonts/corben.woff);
+   src: url(../fonts/Corben-Bold.ttf);
 }
 @font-face {
    font-family: y;
@@ -317,6 +316,42 @@ section {
     margin-left: .5%;
 }
 
+.col-xs-5{
+    margin-left:0.5%;
+}
+
+.col-xs-15,
+.col-sm-15,
+.col-md-15,
+.col-lg-15 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-15 {
+    width: 19.5%;
+    float: left;
+}
+@media (min-width: 768px) {
+.col-sm-15 {
+        width: 19.5%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-15 {
+        width: 19.5%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-15 {
+        width: 19.5%;
+        float: left;
+    }
+}
 
 .our-services .col-sm-2:hover .service-icon {
   background-color: rgba(51, 51, 51, 0);
@@ -1123,5 +1158,4 @@ ul.address {
 }
 
 /*Presets*/
-
 
