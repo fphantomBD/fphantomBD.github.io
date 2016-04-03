@@ -269,7 +269,7 @@ button.checkPageBtn ,a.checkPageBtn {margin-bottom: 20px;}
 }
 }
 /*5. ========================= Wide Mobile Layout: 480px. ==========================*/
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+@media only screen and (min-width: 480px) and (max-width: 100%) {
 .container{width:450px}
 /*5.1 Compare  */
 .compare_menu ul li a {
