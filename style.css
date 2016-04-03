@@ -171,6 +171,15 @@ a:hover{text-decoration:none;}
   top: 77.6%;
 }
 #scrollUp:hover{opacity:.6;}
+
+#scrollDown {
+  background-color: #202B30;
+  padding: 8px 10px;
+  right: 25px;
+  text-decoration: none;
+  top: 77.6%;
+}
+#scrollDown:hover{opacity:.6;}
 /*------------------------------------------------------------------
 [1. body ]
 --------------------------------------------------------------------*/
@@ -291,7 +300,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
 .mobile-menu-area{display:none;}
 .mainmenu, .logo {padding: 15px 0;}
 .logo a {
-  padding: 8px 0;
+  padding: 0px 0;
   display: block;
 }
 .mainmenu a {
@@ -345,7 +354,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   top: 50%;
   width: 100%;
   margin-top: -72px;
-  z-index:2;
+
 }
 /*-------------------------------
 [4.2 Right-Product ]
@@ -364,7 +373,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   background:transparent;
   left: 50%;
   margin-left: -177px;
-  margin-top: -350px;
+  margin-top: -30px;
   text-align: left;
   padding:0;
 }
@@ -375,9 +384,9 @@ li.searchbox.searchbox-open {padding-top: 0;}
   left:0;
 }
 .product_text_two h1 {
-    position: inherit;
-  border-bottom: 2px solid #3A4B60;
+  position: inherit;
   margin-bottom: 65px;
+    text-align: center;
 }
 .product_text p {
   font-size: 20px;
@@ -389,10 +398,12 @@ li.searchbox.searchbox-open {padding-top: 0;}
 }
 .shop_now_btn {
   font-size: 16px;
+  color: aliceblue;
   margin-top: 50px;
   padding: 10px 30px;
   border: 2px solid #3a4b60;
 }
+
 /*==========================================
 [5. Choose-Section ]
 ===========================================*/
@@ -471,10 +482,10 @@ li.searchbox.searchbox-open {padding-top: 0;}
 [6.1 Review-Text ]
 --------------------------------*/
 .single_review  img {
-  height: 120px;
+  height: 50%;
   margin-bottom: 45px;
   margin-top: 30px;
-  width: 120px;
+  width: 50%;
 }
 .single_review p {
   letter-spacing: 2px;
@@ -511,7 +522,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
 [7.1 Compare-Menu ]
 --------------------------------*/
 .compare_menu ul{
-  margin:0;
+  margin:10px;
   padding:0;
   list-style:none;
 }
@@ -519,6 +530,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   font-family: nexa_blackregular;
   font-size: 18px;
   font-weight: 400;
+  
 }
 .compare_menu ul li a {
   border-left: 2px solid rgb(229, 229, 229);
@@ -528,6 +540,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   margin-right: 0;
   border-bottom: transparent;
   border-right:transparent;
+    margin: 100px;
 }
 .nav-tabs {border-bottom: 0;}
 #com_3{border-right:2px solid rgb(229, 229, 229); }
@@ -654,7 +667,7 @@ table tr td {
 /*-------------------------------
 [8.2 Footer-Middel ]
 --------------------------------*/
-.footer_middel {background: rgb(23, 29, 32) none repeat scroll 0 0;}
+.footer_middel {background: rgb(58, 75, 96) none repeat scroll 0 0;}
 .footer_link p {
   border-bottom: 1px solid #3A4B60;
   padding-bottom: 10px;
@@ -690,7 +703,7 @@ table tr td {
 /*-------------------------------
 [8.3 Footer-Bottom ]
 --------------------------------*/
-.footer_bottom {background: rgb(32, 43, 48) none repeat scroll 0 0;}
+.footer_bottom {background: rgb(23, 29, 32, 0.60) none repeat scroll 0 0;}
 .copyright p,.copyright p a {
   color: rgb(255, 255, 255);
   font-size: 13px;
@@ -833,7 +846,7 @@ tr#total_colspan td .checkPageBtn {
 [1. GoogleMap ]
 --------------------------------*/
 #googleMap{
-  height:600px;
+  height:300px;
     width: 100%;
 }
 /*-------------------------------
@@ -856,6 +869,120 @@ button.btn-default.shop_now_btn {
   margin-top: 15px;
   border-radius: 0;
 }
+.modalDialog {
+	position: fixed;
+    overflow-y: scroll;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 2500ms ease-in;
+	-moz-transition: opacity 2500ms ease-in;
+	transition: opacity 2500ms ease-in;
+	pointer-events: none;
+    -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+.modalDialog:target {
+	opacity:1;
+	pointer-events: auto;
+    z-index: 99999;
+}
+
+.modalDialog > div {
+	width: 80%;
+	position: relative;
+	margin: 10% auto;
+	padding: 10px 40px 13px 20px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 1);
+    
+}
+.modalDialog > div:hover{
+    width: 85%;
+}
+
+.close {
+	background: #343434;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: red; }
+
+.modalDialog2 {
+	position: fixed;
+    overflow-y: scroll;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.6);
+	z-index: 99999;
+	opacity:0;
+	-webkit-transition: opacity 2500ms ease-out;
+	-moz-transition: opacity 2500ms ease-out;
+	transition: opacity 2500ms ease-out;
+	pointer-events: none;
+     -webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+.modalDialog2:target {
+	opacity:1;
+	pointer-events: auto;
+    z-index: 99999;
+}
+
+.modalDialog2 > div {
+	width: 80%;
+	position: relative;
+	margin: 10% auto;
+	padding: 10px 40px 13px 20px;
+	border-radius: 10px;
+	background: rgba(255, 255, 255, 1);
+    
+}
+.modalDialog2 > div:hover{
+    width: 85%;
+}
+
+.close2 {
+	background: #343434;
+	color: #FFFFFF;
+	line-height: 25px;
+	position: absolute;
+	right: -12px;
+	text-align: center;
+	top: -10px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 12px;
+	-moz-border-radius: 12px;
+	border-radius: 12px;
+	-moz-box-shadow: 1px 1px 3px #000;
+	-webkit-box-shadow: 1px 1px 3px #000;
+	box-shadow: 1px 1px 3px #000;
+}
+
+.close2:hover { background: red; }
+
 /*========================================================================
 							[ END ]
 =========================================================================*/
