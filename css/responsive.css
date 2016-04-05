@@ -279,4 +279,7 @@ button.checkPageBtn ,a.checkPageBtn {margin-bottom: 20px;}
   font-size: 15px;
   padding: 10px 21.85px;
 }
+@media only screen and (max-width:768px) {
+    .slider_area {display:none}
+}
 }
