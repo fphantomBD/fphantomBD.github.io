@@ -1125,7 +1125,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 	}
 	
 @media only screen and (max-width:768px) {
-    .slider_area {display:none}
+    .slider_area {display:none; visibility:hidden;}
 }
 
 
@@ -1876,7 +1876,7 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		.tparrows.preview2:hover					{	width:30px !important; height:30px !important}
     }
     @media only screen and (max-width:768px) {
-    .slider_area {display:none}
+    .slider_area {display:none; visibility:hidden;}
 }
 
 
