@@ -64,12 +64,12 @@
                 </div>
                     <div class="container page-scroll" role="navigation">
                         <div class="row mega_relative">
-                            <div  class="col-sm-3 col-xs-9">
+                            <div  class="col-sm-3 ">
                                 <div class="logo head_lo">
                                     <a href="index.html"><img src="images/nep.png" ></a>
                                 </div>
                             </div>
-                            <div class="col-sm-9 col-xs-9">
+                            <div class="col-sm-9">
                                 <div class="mainmenu float-right">
                                     <nav>
                                         <ul>
@@ -86,7 +86,7 @@
                     </div>
             </header>
             <!-- mobile-menu-area start -->
-            <!--<div class="mobile-menu-area" style="margin-bottom:0%">
+            <!--<div class="mobile-menu-area" >
                 <div class="container">
                     <div class="mobile-menu">
                         <nav id="dropdown">
@@ -2220,10 +2220,18 @@
 
                 
               <script>
+                    function resize() {
+                        var center = map.getCenter();
+                            google.maps.event.trigger(map, "resize");
+                            map.setCenter(center)
+                    };
                     function initialize() {
                       var mapOptions = {
                         zoom: 17,
+                        zoomControl: false,
+                        scaleControl: false,
                         scrollwheel: false,
+                        draggable:false,
                         center: new google.maps.LatLng(23.793405,90.402581)
                       };
                       var map = new google.maps.Map(document.getElementById('googleMap'),
@@ -2233,10 +2241,16 @@
                         animation:google.maps.Animation.BOUNCE,
                         icon: 'images/map-marker.png',
                         map: map,
+                        zoomControl: false,
+                        scaleControl: false,
+                        scrollwheel: false,
+                          draggable:false,
                         title: 'Neptunian Collection'
                       });
+                        resize();
                     }
-                    google.maps.event.addDomListener(window, 'load', initialize);
+
+                  google.maps.event.addDomListener(window, 'load', initialize);
                 </script>  
             <!-- main js -->
             <script src="js/main.js"></script>
