@@ -1123,6 +1123,10 @@ img.tp-slider-alternative-image	{	width:100%; height:auto;}
 		.tp-simpleresponsive  .button	{	padding:2px 5px 2px; line-height:20px !important; font-size:10px !important}
 		.tp-simpleresponsive  a.button { -webkit-transition: none; -moz-transition: none; -o-transition: none; -ms-transition: none;	 }
 	}
+	
+@media only screen and (max-width:768px) {
+    .slider_area {display:none}
+}
 
 
 
