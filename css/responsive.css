@@ -42,6 +42,9 @@ h1 {
   font-size: 45px;
   line-height: 52px;
 }
+@media only screen and (max-width:768px) {
+    .slider_area {display:none}
+}
 /* ScrollUp */
 #scrollUp {top: 77.6%}
 /*2.2 Product-Section */
