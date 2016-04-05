@@ -97,6 +97,21 @@ h5 {
   margin-left: 3px;
   padding: 6px 11px;
 }
+    .slider_area{
+        visibility: hidden;
+        height: 0px;
+    }
+        .fullwidthbanner li a{
+        visibility: hidden;
+            height: 0px;
+    }
+    .tp-caption{
+        visibility: hidden;
+        height: 0px;
+    }
+.tparrows.preview3::after, .tparrows.preview3 {
+  visibility: hidden;
+}
 /*3.2 Product-Section */
 .product_text_two, .tre_shirt_2_text {
   margin-left: -110px;
@@ -168,7 +183,20 @@ h5 {
   font-size: 13px;
 }
 /*4.2 Slider-Section */
-.tparrows.preview3::after, .tparrows.preview3 {
+    .slider_area{
+        visibility: hidden;
+        height: 0px;
+    }
+    .fullwidthbanner li a{
+        visibility: hidden;
+        height: 0px;
+    }
+        .tp-caption  {
+        visibility: hidden;
+            height: 0px;
+    }
+    
+    .tparrows.preview3::after, .tparrows.preview3 {
   visibility: hidden;
 }
 /*4.3 Product-Section */
