@@ -1,3 +1,13 @@
+$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
 (function ($) {
 	
 	/*============== JS FILE ACTIVE ===============*/
@@ -24,10 +34,11 @@
 	---------------------*/
 	$.scrollUp({
 		animation: 'slide', // Fade, slide, none
-		scrollSpeed: 1500,
+		scrollSpeed: 800,
 		scrollText: [
 		  "<i class='fa fa-chevron-up'></i>"
 		]
 	});
+    
 	
 })(jQuery);
