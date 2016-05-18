@@ -353,7 +353,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
   position: absolute;
   top: 50%;
   width: 100%;
-  margin-top: -72px;
+  margin-top: -8%;
 
 }
 /*-------------------------------
@@ -399,7 +399,7 @@ li.searchbox.searchbox-open {padding-top: 0;}
 .shop_now_btn {
   font-size: 16px;
   color: aliceblue;
-  margin-top: 50px;
+  margin-top: 10%;
   padding: 10px 30px;
   border: 2px solid #3a4b60;
 }
@@ -879,12 +879,11 @@ button.btn-default.shop_now_btn {
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 2500ms ease-in;
-	-moz-transition: opacity 2500ms ease-in;
-	transition: opacity 2500ms ease-in;
+	-webkit-transition: opacity 1200ms ease-in;
+	-moz-transition: opacity 1200ms ease-in;
+	transition: opacity 1200ms ease-in;
 	pointer-events: none;
-    -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
+   
 }
 .modalDialog:target {
 	opacity:1;
@@ -901,9 +900,9 @@ button.btn-default.shop_now_btn {
 	background: rgba(255, 255, 255, 1);
     
 }
-.modalDialog > div:hover{
+/*.modalDialog > div:hover{
     width: 85%;
-}
+}*/
 
 .close {
 	background: #343434;
@@ -936,12 +935,11 @@ button.btn-default.shop_now_btn {
 	background: rgba(0, 0, 0, 0.6);
 	z-index: 99999;
 	opacity:0;
-	-webkit-transition: opacity 2500ms ease-out;
-	-moz-transition: opacity 2500ms ease-out;
-	transition: opacity 2500ms ease-out;
+	-webkit-transition: opacity 1200ms ease-out;
+	-moz-transition: opacity 1200ms ease-out;
+	transition: opacity 1200ms ease-out;
 	pointer-events: none;
-     -webkit-transition: width 2s; /* Safari */
-    transition: width 2s;
+     
 }
 .modalDialog2:target {
 	opacity:1;
@@ -958,9 +956,9 @@ button.btn-default.shop_now_btn {
 	background: rgba(255, 255, 255, 1);
     
 }
-.modalDialog2 > div:hover{
+/*.modalDialog2 > div:hover{
     width: 85%;
-}
+}*/
 
 .close2 {
 	background: #343434;
