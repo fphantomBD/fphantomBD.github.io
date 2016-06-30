@@ -1,14 +1,11 @@
 
 TITLE: 
-Fotografy - One Page Responsive Free HTML5 template
+Tri-Zone Demo site
 
 AUTHOR:
-DESIGNED & DEVELOPED by FREEHTML5.co
+DESIGNED & DEVELOPED by fphantom technologies.
 
-Website: http://freehtml5.co/
-Twitter: http://twitter.com/fh5co
-Facebook: http://facebook.com/fh5co
-
+Website: http://fphantom.com/
 
 CREDITS:
 
@@ -47,7 +44,3 @@ http://markdalgleish.com/projects/stellar.js/
 
 FlexSlider
 https://www.woothemes.com/flexslider/
-
-Demo Images:
-http://pexels.com
-http://unsplash.com
